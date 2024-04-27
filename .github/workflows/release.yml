@@ -1,0 +1,36 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - '*'
+
+permissions:
+  contents: write
+
+env:
+  ZIP_NAME: jan-models-bggpt-${{ github.ref_name }}.zip
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate models
+        working-directory: utils/model-generator
+        run: |
+          pip install -r requirements.txt
+          python main.py
+
+      # Create a .zip file of the models directory without the parent directory
+      - name: Create .zip file
+        working-directory: models
+        run: |
+          zip -r ../${{ env.ZIP_NAME }} .
+
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: ${{ env.ZIP_NAME }}

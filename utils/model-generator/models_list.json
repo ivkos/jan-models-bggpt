@@ -1,0 +1,26 @@
+[
+  {
+    "repo": "https://huggingface.co/INSAIT-Institute/BgGPT-7B-Instruct-v0.1-GGUF",
+    "gguf_files": [
+      "BgGPT-7B-Instruct-v0.1.F16.gguf",
+      "BgGPT-7B-Instruct-v0.1.Q4_K_M.gguf",
+      "BgGPT-7B-Instruct-v0.1.Q4_K_S.gguf",
+      "BgGPT-7B-Instruct-v0.1.Q5_K_M.gguf",
+      "BgGPT-7B-Instruct-v0.1.Q5_K_S.gguf",
+      "BgGPT-7B-Instruct-v0.1.Q6_K.gguf",
+      "BgGPT-7B-Instruct-v0.1.Q8_0.gguf"
+    ]
+  },
+  {
+    "repo": "https://huggingface.co/INSAIT-Institute/BgGPT-7B-Instruct-v0.2-GGUF",
+    "gguf_files": [
+      "BgGPT-7B-Instruct-v0.2.F16.gguf",
+      "BgGPT-7B-Instruct-v0.2.Q4_K_M.gguf",
+      "BgGPT-7B-Instruct-v0.2.Q4_K_S.gguf",
+      "BgGPT-7B-Instruct-v0.2.Q5_K_M.gguf",
+      "BgGPT-7B-Instruct-v0.2.Q5_K_S.gguf",
+      "BgGPT-7B-Instruct-v0.2.Q6_K.gguf",
+      "BgGPT-7B-Instruct-v0.2.Q8_0.gguf"
+    ]
+  }
+]
